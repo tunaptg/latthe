@@ -18,7 +18,9 @@ body {
 #pt-game-wrapper {
     min-height: 100vh;
     padding: 20px 10px;
-    font-family: 'Nunito', sans-serif; 
+    /* Đổi thành Quicksand và thêm độ dày chữ mặc định */
+    font-family: 'Quicksand', sans-serif; 
+    font-weight: 600; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,9 +44,15 @@ body {
 }
 
 .pt-popup-content h2 { 
-    color: var(--sun-orange); font-family: 'Fredoka', sans-serif; font-size: 30px; 
-    margin-top: 10px; border-bottom: 3px dashed var(--sun-yellow); 
-    display: inline-block; padding-bottom: 10px; margin-bottom: 20px;
+    color: var(--sun-orange); 
+    font-family: 'Quicksand', sans-serif; /* Sửa ở đây */
+    font-weight: 900; /* Cho chữ mập mạp, dày dặn */
+    font-size: 30px; 
+    margin-top: 10px; 
+    border-bottom: 3px dashed var(--sun-yellow); 
+    display: inline-block; 
+    padding-bottom: 10px; 
+    margin-bottom: 20px;
 }
 .pt-popup-content p { 
     text-align: left; font-size: 17px; color: var(--text-main); 
@@ -62,14 +70,24 @@ body {
 }
 
 h1 { 
-    color: var(--sun-orange); font-family: 'Fredoka', sans-serif; 
-    font-size: 34px; margin: 0; text-shadow: 2px 2px 0px #FFE4B5;
+    color: var(--sun-orange); 
+    font-family: 'Quicksand', sans-serif; /* Sửa ở đây */
+    font-weight: 900; /* Tăng độ dày chữ lên cao nhất nhìn cho giống game */
+    font-size: 34px; 
+    margin: 0; 
+    text-shadow: 2px 2px 0px #FFE4B5;
 }
 #countdown { 
-    background: var(--sun-yellow); color: #FFF; 
-    padding: 8px 20px; border-radius: 20px; font-weight: bold;
-    font-size: 18px; margin: 15px 0; display: inline-block; 
-    box-shadow: 0 4px 0 var(--sun-orange); font-family: 'Fredoka', sans-serif;
+    background: var(--sun-yellow); 
+    color: #FFF; 
+    padding: 8px 20px; 
+    border-radius: 20px; 
+    font-weight: 700;
+    font-size: 18px; 
+    margin: 15px 0; 
+    display: inline-block; 
+    box-shadow: 0 4px 0 var(--sun-orange); 
+    font-family: 'Quicksand', sans-serif; /* Sửa ở đây */
 }
 
 /* --- CONFIG SLIDERS --- */
@@ -78,7 +96,14 @@ h1 {
     padding: 15px 20px; margin-bottom: 20px; background: rgba(135, 206, 235, 0.15); 
 }
 .config-row { display: flex; align-items: center; margin-bottom: 15px; width: 100%; }
-.config-label { font-family: 'Fredoka', sans-serif; font-size: 18px; color: var(--shadow-blue); width: 85px; text-align: left; font-weight: bold; }
+.config-label { 
+    font-family: 'Quicksand', sans-serif; /* Sửa ở đây */
+    font-size: 18px; 
+    color: var(--shadow-blue); 
+    width: 85px; 
+    text-align: left; 
+    font-weight: 700; 
+}
 
 .weather-slider {
     -webkit-appearance: none; flex-grow: 1; height: 12px; background: #FFF;
@@ -98,10 +123,20 @@ h1 {
 
 /* --- NÚT BẤM CHÍNH --- */
 .btn-main { 
-    width: 100%; padding: 12px; border: none; border-radius: 15px; 
-    font-weight: 700; cursor: pointer; color: white; transition: 0.2s; 
-    text-decoration: none; display: block; font-family: 'Fredoka', sans-serif;
-    font-size: 20px; text-transform: uppercase; letter-spacing: 1px;
+    width: 100%; 
+    padding: 12px; 
+    border: none; 
+    border-radius: 15px; 
+    font-weight: 700; 
+    cursor: pointer; 
+    color: white; 
+    transition: 0.2s; 
+    text-decoration: none; 
+    display: block; 
+    font-family: 'Quicksand', sans-serif; /* Sửa ở đây */
+    font-size: 20px; 
+    text-transform: uppercase; 
+    letter-spacing: 1px;
     touch-action: manipulation;
 }
 .btn-main:active { transform: translateY(4px); box-shadow: none !important; }
@@ -177,12 +212,24 @@ h1 {
     display: inline-block; transition: 0.3s; box-shadow: 0 6px 0 #FF758C;
 }
 .tiktok-btn-container:active { transform: translateY(3px); box-shadow: 0 2px 0 #FF758C; }
-.tiktok-text { color: #FFF; font-weight: 700; font-size: 18px; font-family: 'Nunito', sans-serif; text-shadow: 1px 1px 2px rgba(0,0,0,0.2); }
-
+.tiktok-text { 
+    color: #FFF; 
+    font-weight: 700; 
+    font-size: 18px; 
+    font-family: 'Quicksand', sans-serif; /* Sửa ở đây */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2); 
+}
 .ocean-led-container {
     width: 100%; max-width: 500px; background: rgba(255, 255, 255, 0.9); border: 3px dashed var(--soft-pink);
     padding: 12px 0; overflow: hidden; white-space: nowrap; margin-top: 25px; border-radius: 20px;
     box-shadow: 0 5px 15px rgba(255, 182, 193, 0.4);
 }
-.ocean-text { display: inline-block; color: #FF69B4; font-size: 18px; font-weight: bold; animation: ocean-marquee 15s linear infinite; font-family: 'Fredoka', sans-serif; }
+.ocean-text { 
+    display: inline-block; 
+    color: #FF69B4; 
+    font-size: 18px; 
+    font-weight: bold; 
+    animation: ocean-marquee 15s linear infinite; 
+    font-family: 'Quicksand', sans-serif; /* Sửa ở đây */
+}
 @keyframes ocean-marquee { from { transform: translateX(100%); } to { transform: translateX(-100%); } }
