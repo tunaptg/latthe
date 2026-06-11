@@ -226,8 +226,8 @@ function renderIcons() {
     } 
 }
 
-// XỬ LÝ SỰ KIỆN CÁC NÚT BẤM
-document.getElementById("hint-btn").addEventListener("pointerdown", function(e) {
+// XỬ LÝ SỰ KIỆN CÁC NÚT BẤM (Đã đổi thành click)
+document.getElementById("hint-btn").addEventListener("click", function(e) {
     e.preventDefault();
     const cells = document.querySelectorAll(".game-cell:not(.is-locked)");
     const map = {}; let found = false;
@@ -260,7 +260,7 @@ document.getElementById("hint-btn").addEventListener("pointerdown", function(e) 
     }
 });
 
-document.getElementById("undo-btn").addEventListener("pointerdown", (e) => {
+document.getElementById("undo-btn").addEventListener("click", (e) => {
     e.preventDefault();
     if(historyStack.length === 0) return;
     triggerSound('click');
@@ -281,14 +281,14 @@ document.getElementById("undo-btn").addEventListener("pointerdown", (e) => {
     firstChoice = null; saveToStorage(); 
 });
 
-document.getElementById("reset-btn").addEventListener("pointerdown", (e) => { 
+document.getElementById("reset-btn").addEventListener("click", (e) => { 
     e.preventDefault();
     if(confirm("Bạn có chắc muốn xóa toàn bộ bảng hiện tại và áp dụng kích thước mới?")) {
         renderBoard(); triggerSound('click'); 
     }
 });
 
-document.getElementById("mute-btn").addEventListener("pointerdown", function(e) { 
+document.getElementById("mute-btn").addEventListener("click", function(e) { 
     e.preventDefault();
     isMuted = !isMuted; 
     this.innerText = isMuted ? "🔈" : "🔊"; 
