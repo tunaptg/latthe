@@ -1,0 +1,21 @@
+{
+  "name": "Sự kiện thời tiết Play Together",
+  "short_name": "PT Weather",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#A1C4FD",
+  "theme_color": "#87CEEB",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "1.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "1.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
